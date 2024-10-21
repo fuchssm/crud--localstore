@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tyles.css">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Crud com o local storange e modal</h1>
+
+        <form id="formUsuario" class="formulario">
+            <h2 style="margin-bottom: 10px;">Cadastro do usúario</h2>
+            <input type="nome" id="nome" class="input-form" placeholder="Nome" required>
+            <input type="email" id="email" class="input-form" placeholder="Email" required>
+            <button id="botaosalvar" class="botao">Salvar</button>
+          
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody id="listaUsuarios">
+
+            </tbody>
+        </table>
+
+        <!--MODAL PARA EDUÇÃO-->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="formModal" class="close">&times;</span>
+                <h2>Atualizar Usuário</h2>
+            </div>
+        </div>
+
+</body>
+</html>
